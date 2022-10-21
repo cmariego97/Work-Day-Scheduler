@@ -1,13 +1,10 @@
 // variables
-var currentDay = $('#currentDay');
 var timeSlot = $('#current-time-block');
-var saveBtn = $('#saveBtn');
 
-// function display date
-function displayDay() {
-    var dateToday = moment().format('dddd, MMM Do YYYY');
-    currentDay.text(dateToday);
-}
+// display current date via moment
+var currentDay = $('#currentDay');
+var dateToday = moment().format("dddd, MMM Do, YYYY");
+currentDay.text(dateToday);
 
 // function - track time color coded
 function currentTime() {
@@ -43,9 +40,35 @@ function addTodo() {
     var time = $(this).parent().attr("id");
 }
 
+// saves event to local storage
+var saveBtn = $('#saveBtn');
 
-// save button event listener
-saveBtn.on('click', addToDo);
+function saveEvent(event) {
+    event.preventDefault();
+
+    var grandParent = $(event.target).parent().parent();
+    var secondChild = grandparent.children().eq(1);
+    var firstChild = secondChild.children().eq(0);
+    var input = firstChild.val().trim();
+    var time = grandParent.attr("id");
+
+    console.log(time);
+    $('#appt-msg').text("Event has been saved: " + input + " at " + time);
+
+    localStorage.setItem(time, input);
+}
+
+// saves Event on button click
+var containerEl = $('.container');
+containerEl.on('click', '.saveBtn', saveEvent);
+
+// retrieve events from local storage
+function loadEvents() {
+    var hour7 = localStorage.getItem("hour7");
+    $('#hour7 .description').val(hour7);
+}
+
+loadEvents();
 
 // calling function to display date
 displayDay();
