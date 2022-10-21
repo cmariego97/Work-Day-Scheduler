@@ -68,7 +68,24 @@ textarea {
   color: white;
 }
 
-.saveBtn i:hover {
+.saveBtn i:hover, .clearBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
+  color: black;
+}
+
+.clear {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  place-items: center;
+  justify-content: center;
+}
+
+.clearBtn {
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: rgb(246, 150, 112);
+  font-size: 18px;
+  color: white
 }
