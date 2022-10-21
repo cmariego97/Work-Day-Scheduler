@@ -4,24 +4,24 @@ This is a simple calendar application that allows a user to save events for each
 
 ## Usage
 
-To use this application, visit this [♡ page ♡]()
+To use this application, visit this [♡ page ♡](https://cmariego97.github.io/Work-Day-Scheduler/)
 
 The Day Calendar blocks are color-coded based on the time of the day:
 - grey = events that have passed
 - red = event that is currently happening
 - green = events that are in the future
 
-![color-coded calendar]()
+![color-coded scheduler](./assets/images/color-coded-scheduler.png)
 
 To add an event, click on any of the colored text box and type any content.
 
 To save the event, click on the save icon.
 
-![added an event]()
+![added an event](./assets/images/add-event-demo.gif)
 
 To clear all events, click the erase icon at the bottom of the page.
 
-![clear events]()
+![clear events](./assets/images/clear-events-demo.gif)
 
 ## Credits
 
