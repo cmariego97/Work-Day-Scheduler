@@ -1,6 +1,6 @@
 # Work Day Scheduler
 ## Description
-This is a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery, and using the Moment.js library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
+This is a simple calendar application that allows a user to save events for each hour of the day by modifying starter code. This app runs in the browser and features a dynamically updated HTML and CSS powered by jQuery, and uses the Moment.js library to work with date and time.
 
 ## Usage
 
@@ -35,12 +35,13 @@ This application is covered under the MIT license.
 To view a description of this license type, refer to the repository or click [♡ here ♡](https://opensource.org/licenses/MIT).
 
 ## Badges
+![HTML](https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+)
+![CSS](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+)
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
-
-
-
 
 ## About the Author
 
